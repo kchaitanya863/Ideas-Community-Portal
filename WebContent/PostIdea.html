@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<title>Post Idea</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function PostIdeaClick(){
+	window.location="LoadIedas2.jsp"
+}
+</script>
+</head>
+<body bgcolor="black">
+<div class="container"> 
+  <!-- Header -->
+   
+  <header class="header">
+    <div align="left">
+    <h4 class="logo">Ideas Community Portal<br> Post your greatest idea here!!</h4>
+    </div> 
+    
+     
+    </header>
+    
+      </div>
+ 
+<div align="center">
+<form action="PostIdeaServlet" method="post">
+<div class="login-screen">
+<h1 align="center"></h1><br><br>
+Title: <input type="text" name="title" size="70" title="Title" ><br><br>
+Describe it down Here<br>
+<textarea rows="20" cols="80" name="desc" title="Description">Start by replacing this text!!</textarea><br><br>
+<footer id="contact">
+<input type="submit" class="button" value="Post">
+<div class="button" onclick="PostIdeaClick()" >View Ideas</div>
+</footer>
+</form>
+</div>
+
+
+</body>
+</html>
